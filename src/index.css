@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-wsans: "Work Sans", sans-serif;
+    --font-dark: "Qwigley", cursive;
+    --font-spook: "Fruktur", system-ui;
+    --font-pun: "Gluten", cursive;
+    --font-ubuntu: "Ubuntu Condensed", sans-serif;
+}
