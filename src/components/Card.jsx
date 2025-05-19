@@ -56,10 +56,10 @@ export const ShopCard = ({ name, price, image, id }) => {
                     <div className="mx-5 mb-5">
                         <button className={`p-2 rounded-2xl bg-amber-100 hover:cursor-pointer hover:border-black border border-white ${quantity === 0 ? "block" : "hidden"}`} onClick={handleAddToCart}>Add to Cart</button>
                         <div className={`${quantity !== 0 ? "block" : "hidden"} flex items-center justify-between`}>
-                            <button onClick={handleRemove}><img src="./delete_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
-                            <button onClick={handleDecrement}><img src="./remove_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white" /></button>
+                            <button onClick={handleRemove}><img src="/shop/delete_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
+                            <button onClick={handleDecrement}><img src="/shop/remove_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white" /></button>
                             <span className="px-2">{quantity}</span>
-                            <button onClick={handleIncrement}><img src="./add_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white" /></button>
+                            <button onClick={handleIncrement}><img src="/shop/add_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white" /></button>
                         </div>
                     </div>
                 </div>
@@ -106,10 +106,10 @@ export const CartCard = ({ index, name, price, image, id, quantity }) => {
                         <p className="p-2 mx-5">₹{price}</p>
                     </div>
                     <div className="mx-5 flex items-center justify-between">
-                        <button onClick={handleRemove}><img src="./delete_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
-                        <button onClick={handleDecrement}><img src="./remove_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
+                        <button onClick={handleRemove}><img src="/shop/delete_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
+                        <button onClick={handleDecrement}><img src="/shop/remove_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
                         <span className="px-2">{quantity}</span>
-                        <button onClick={handleIncrement}><img src="./add_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
+                        <button onClick={handleIncrement}><img src="/shop/add_black.svg" alt="" className="w-10 bg-gray-100 p-2 rounded-2xl hover:border-black border border-white mx-2" /></button>
                     </div>
                 </div>
             </div>

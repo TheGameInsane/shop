@@ -24,12 +24,12 @@ const Shop = () => {
                 <h1 className="text-5xl font-ubuntu text-center text-white">Shop</h1>
             </div>
             <div className="fixed top-0 right-0 p-4 select-none hover:cursor-pointer">
-                <NavLink to="/cart">
+                <NavLink to="/shop/cart">
                     <div className="relative">
                         {/* <span className="material-icons-outlined text-white" style={{ fontSize: "40px" }}>
                         shopping_cart
                     </span> */}
-                        <img src="./shopping_cart.svg" alt="" className="w-9" />
+                        <img src="/shop/shopping_cart.svg" alt="" className="w-9" />
                         <div className="absolute bottom-1 -left-1 w-4 h-4 bg-gray-500 rounded-full flex items-center justify-center text-white">
                             <span className="text-xs font-bold">{itemCount}</span>
                         </div>

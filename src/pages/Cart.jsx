@@ -17,9 +17,9 @@ const Cart = () => {
                     <h1 className="text-5xl font-ubuntu text-center text-white">Cart</h1>
                 </div>
                 <div className={`fixed top-0 left-0 p-4 select-none hover:cursor-pointer ${items.length < 1 ? 'hidden' : 'block'}`}>
-                    <NavLink to="/">
+                    <NavLink to="/shop/">
                         <div className="relative flex">
-                            <img src="./return.svg" alt="" className="w-9 inline" /><span className="text-white font-ubuntu text-2xl">Back to Shop</span>
+                            <img src="/shop/return.svg" alt="" className="w-9 inline" /><span className="text-white font-ubuntu text-2xl">Back to Shop</span>
                         </div>
                     </NavLink>
                 </div>
@@ -60,9 +60,9 @@ const Cart = () => {
                             <>
                                 <div className="flex flex-col justify-around items-center h-full select-none">
                                     <h1 className="text-white font-wsans m-5">No items in the cart.</h1>
-                                    <NavLink to='/'>
+                                    <NavLink to='/shop/'>
                                         <div className="flex items-center hover:cursor-pointer hover:scale-x-105 transition-all duration-100 ease-in-out">
-                                            <img src="./shopping_cart.svg" alt="" className="w-30 inline" />
+                                            <img src="/shop/shopping_cart.svg" alt="" className="w-30 inline" />
                                             <span className="text-white font-wsans text-6xl">Let's get Shopping!</span>
                                         </div>
                                     </NavLink>
